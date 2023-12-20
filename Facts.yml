@@ -13,3 +13,4 @@
           - " Distribution is {{ ansible_distribution }} "		  
           - " version is {{ ansible_distribution_version }} "			  
           - " Processor is {{ ansible_processor }} "
+      when: ansible_facts['ansible_nodename'] == "ip-192-168-0-6.ec2.internal"     
