@@ -1,0 +1,15 @@
+---
+- name: Ejemplo de Variables de Ansible
+  hosts: all
+  tasks:
+
+
+    # Mostrar las variables
+    - debug:
+        msg: 
+          - " Architecture is {{ ansible_architecture }} "
+          - " Hostname is {{ ansible_hostname }} "
+          - " Nodename is {{ ansible_nodename }} "		  
+          - " Distribution is {{ ansible_distribution }} "		  
+          - " version is {{ ansible_distribution_version }} "			  
+          - " Processor is {{ ansible_processor }} "
